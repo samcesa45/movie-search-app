@@ -46,7 +46,7 @@ const App = (props) => {
       </div>
       <section className="section">
         <div className="container">
-          {movies.length > 0 &&
+          {movies &&
             movies.map((movie) => {
               return <MovieContainer key={movie.id} {...movie} />;
             })}
